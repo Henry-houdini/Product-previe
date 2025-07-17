@@ -90,12 +90,21 @@ body {
 .product {
     --product-padding: 1.5rem;
     --contact-spaceing:1rem;
+    display: grid;
     background-color: var(--White);
     border-radius: 0.5rem;
     overflow: hidden;
+    margin-bottom: 2rem;
     max-width: 600px;
 }
 
+@media (min-width: 600px) {
+    .product {
+        --product-padding: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    
 .flex-group {
     display: flex;
     gap: var(--contact-spaceing);
@@ -121,6 +130,10 @@ h1 {
     color: black;
 }
 
+p {
+    font-weight: 550;
+}
+
 .current_price {
     font-size: 2rem;
     font-family: var(--ff-account);
@@ -137,12 +150,26 @@ h1 {
     background-color: var(--Green-500);
     border: none;
     border-radius: 10px;
-    padding: 0.5rem;
-    color: var(\);
+    padding: 0.6em 1.5em ;
+    color: var(--White);
+    font-weight: var(--fw--bold);
+    font-size: 1rem;
+    cursor: pointer;
 }
 
+.product_button i {
+    font-size: 20px;
+    place-items: center;
+    margin-right: 0.3rem;
+}
 
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
+.product_button:hover {
+    background-color: var(--Green-700);
+}
 
