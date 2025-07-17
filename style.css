@@ -1,0 +1,148 @@
+:root {
+    --backgrond-color:hsl(30, 38%, 92%);
+    --Green-700: hsl(158, 42%, 18%);
+    --Green-500: hsl(158, 36%, 37%);
+    --font-size-paragraph: 1.3rem;
+    --White: hsl(0, 0%, 100%);
+    --gray : hsl(228, 12%, 48%);
+    --fw--regular: 500;
+    --fw--bold: 700;
+    --ff-base: "Montserrat", sans-serif;
+    --ff-account: "Fraunces", serif;
+}
+
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0%;
+}
+
+body,html {
+    height: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.7;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1 {
+    line-height: 1.1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* general styling */
+
+body {
+    font-family: var(--ff-base);
+    font-weight: var(--Green-500);
+    font-size: 0.875rem;
+    color: var(--gray);
+    background-color: var(--backgrond-color);
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+}
+
+.product {
+    --product-padding: 1.5rem;
+    --contact-spaceing:1rem;
+    background-color: var(--White);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    max-width: 600px;
+}
+
+.flex-group {
+    display: flex;
+    gap: var(--contact-spaceing);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.product-content {
+    padding: var(--product-padding);
+    display: grid;
+    gap: var(--contact-spaceing);
+}
+
+.product-catagory {
+    text-transform: uppercase;
+    letter-spacing: 0.2575rem;
+    font-size: 0.8125rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: var(--ff-account);
+    color: black;
+}
+
+.current_price {
+    font-size: 2rem;
+    font-family: var(--ff-account);
+    color: var(--Green-500);
+    font-weight: var(--fw--bold);
+
+}
+
+.original_price {
+    text-decoration: line-through;
+}
+
+.product_button {
+    background-color: var(--Green-500);
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    color: var(\);
+}
+
+
+
+
+
+
